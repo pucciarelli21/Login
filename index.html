@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container login">
+        <form class="form-login needs-validation" novalidate>
+            <div>
+                <label class="form-label" for="user">User</label>
+                <input class="form-control" type="email" id="user" required>
+                <div class="valid-feedback">
+                    User validate!
+                </div>
+                <div class="invalid-feedback">
+                    User not found
+                </div>
+            </div>
+            <div>
+                <label class="form-label" for="pass"> Password</label>
+                <input class="form-control" type="text" id="pass" minlength="8" required>
+                <div class="valid-feedback">
+                    Password validate!
+                </div>
+                <div class="invalid-feedback">
+                    Password must be 8 characters
+                </div>
+            </div>
+            <button class="btn btn-primary" id="button-confirm" type="button">Login</button>
+        </form>
+    </div>
+</body>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.js"></script>
+
+</html>
