@@ -1,4 +1,4 @@
-const user = document.getElementById("user")
+const user = document.getElementById("email")
 const password = document.getElementById("pass")
 const form = document.querySelector('.needs-validation')
 
@@ -11,10 +11,15 @@ function validacion() {
 
 function showPassword() {
     var htmlType = document.getElementById("pass");
+    var buttonShowPasword = document.getElementById("btn-password")
     if (htmlType.type == "password") {
         htmlType.type = "text";
+        buttonShowPasword.classList.add('btn-secondary');
+        buttonShowPasword.classList.remove('btn-primary');
     } else {
         htmlType.type = "password";
+        buttonShowPasword.classList.add('btn-primary');
+        buttonShowPasword.classList.remove('btn-secondary');
     }
 }
 

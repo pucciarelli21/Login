@@ -1,3 +1,7 @@
+body{
+  background-image: linear-gradient(to right, #292828 0%, rgb(41, 41, 41) 100%);
+}
+
 .login{
   display: grid;
   justify-content: center;
@@ -7,47 +11,56 @@
 .form-login{
   position: relative;
   top: 50%;
-  padding: 4em;
-  border: 1px solid;
+  padding: 2em;
+  border-radius: 10px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
+.form-control{
+  margin-bottom: 1em;
+}
 
+.btn-password{
+  position:absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 
-         
-.btn-grad1 {
-    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    display: block;
-  }
+  width: 12%;
+  height: 11%;
 
-  .btn-grad1:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
- 
+  left: 72.6%;
+  top: 56%;
+}
 
-       
-         
-  .btn-grad {
-    background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%);
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
+.form-label{
+  font-family: 'Franklin Gothic Medium';
+  font-size:larger;
+}
 
-    display: block;
-  }
+form .btn-login{
+  align-items: end;
+}
 
-  .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
+#pass{
+  width: 76%;
+}
+
+.valid-feedback, .invalid-feedback{
+  padding-bottom: 1em;
+}
+
+h1{
+  padding-top: 5em;
+  color:#f5f9fa;
+}
+
+.back{
+  display: flex;
+  justify-content: center;
+  padding-top: 10em;
+}
+
+.back button{
+  width: 80%;
+}
